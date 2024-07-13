@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1433290554633007
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4459564896280851}
+  - 114: {fileID: 114241207926156895}
+  m_Layer: 0
+  m_Name: ActivateWatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4459564896280851
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433290554633007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114241207926156895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1433290554633007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c4d98dc6744a70ae0375edc2944286, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  chooseCloudSaveDialogPrefab: {fileID: 114756531753387568, guid: 5ee70292246973140ad3132bbf4777a9, type: 2}
+  migrateSaveDialogPrefab: {fileID: 114491425082820618, guid: 5a1ec56e3a2f7704793cb7fbab740c30, type: 2}
+  gemRefundDialogPrefab: {fileID: 114782853491601889, guid: 8e94ecee5c435ff4b929b55b18706480, type: 2}
+  gemRewardGivenSound: {fileID: 11400000, guid: b64b90d87ddd34445814d5a927320c91, type: 2}
+  isResolvingConflict: 0
+  isForcingReboot: 0
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1433290554633007}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

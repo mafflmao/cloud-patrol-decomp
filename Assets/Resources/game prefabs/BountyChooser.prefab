@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1186593159740074
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4698372261495596}
+  - 114: {fileID: 114591740179960902}
+  m_Layer: 0
+  m_Name: BountyChooser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4698372261495596
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1186593159740074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9827921, y: 1.0309464, z: 0.19666743}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114591740179960902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1186593159740074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a243fb8b46d94bb3ccfa4faf725929, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  bountyIcons:
+  - {fileID: 2800000, guid: 3de61b00a120de74590ed4752ad1f4b7, type: 3}
+  - {fileID: 2800000, guid: b1b1230621394224ebeb3ed095f0039f, type: 3}
+  - {fileID: 2800000, guid: 7581ea4ec32fc814c846f00c5b7ce1f0, type: 3}
+  - {fileID: 2800000, guid: a06add716ac813249a337923e8ff4f1f, type: 3}
+  - {fileID: 2800000, guid: dcdac411f4147a941a304db92d020a98, type: 3}
+  - {fileID: 2800000, guid: 786f1086ca706eb4abca93bf32c63abe, type: 3}
+  - {fileID: 2800000, guid: 363f597fa66eb93468b4ea3a7f7638b3, type: 3}
+  - {fileID: 2800000, guid: 7589fb8e63488d74cb84583805a2fdbe, type: 3}
+  - {fileID: 2800000, guid: b7d77ff7054442f4f90710f237987795, type: 3}
+  - {fileID: 2800000, guid: a09587e9c839a154da59a805d830ef5a, type: 3}
+  - {fileID: 2800000, guid: dc5caf9c4e5b5884e8888b0c56de3ffc, type: 3}
+  - {fileID: 2800000, guid: 3ef21cfaa21524d45a190a9523a51500, type: 3}
+  - {fileID: 2800000, guid: 826600a73ba045e4ab71329e6d88983e, type: 3}
+  - {fileID: 2800000, guid: fc2e4930d4a84fc498485c8f54874d7a, type: 3}
+  - {fileID: 2800000, guid: d3aa9ddb82035d34a944f1c091efff17, type: 3}
+  - {fileID: 2800000, guid: 9ebe48ea13211c14d8ef76e9b38c1119, type: 3}
+  - {fileID: 2800000, guid: 0308e1ea67a75ea4da4035f7bf9bb88d, type: 3}
+  - {fileID: 2800000, guid: 54f3f178cce3c0c47a9b43326c1e9c9c, type: 3}
+  - {fileID: 2800000, guid: 9ec844c0ae41d4b44bc39db46d2a2226, type: 3}
+  - {fileID: 2800000, guid: 80510ea12ce961e49a91991fb8c9043b, type: 3}
+  - {fileID: 2800000, guid: e9bff570925f3c348bf9f377666fa210, type: 3}
+  - {fileID: 2800000, guid: 1f0b7d160841882449297dfa16bafae4, type: 3}
+  - {fileID: 2800000, guid: c01a174b62595f0488a4afb9cd55fab2, type: 3}
+  - {fileID: 2800000, guid: 1e069225bb951f64eb329e153804f253, type: 3}
+  - {fileID: 2800000, guid: a2762f16dda82a643aedff3468da1887, type: 3}
+  allPowerups: {fileID: 11400000, guid: 55957bd5450006e479c83e6f0856b87f, type: 2}
+  startingPowerup: {fileID: 11400000, guid: db11b79b399c37748ada922c3208ac6d, type: 2}
+  allCharacters: {fileID: 11400000, guid: a3dd1b8b135754e4da7a02c394ae8f28, type: 2}
+  hatPrefab: {fileID: 1408612404210652, guid: e0748f9c80b6d2d448d43f280fdaa5e0, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1186593159740074}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1691334142911017
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4794076031157746}
+  - 114: {fileID: 114673880984134052}
+  m_Layer: 0
+  m_Name: Sunburn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4794076031157746
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691334142911017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114673880984134052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1691334142911017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a122799f01f138fa4dd6efc40ccc0cb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  replacements:
+  - originalObject: {fileID: 4225000235920878, guid: 2aaae8bf51922a74d940408210f3fc27, type: 2}
+    replacement: {fileID: 4375256459065941, guid: d50fbc8fa12661249a2236158d4777f5, type: 2}
+  - originalObject: {fileID: 4363002288052432, guid: 708c33804ba102c469dc04cd0c3a9c73, type: 2}
+    replacement: {fileID: 4257425722405299, guid: 7fc294813589e9e47a688e293c8a0c4e, type: 2}
+  - originalObject: {fileID: 4653369215325535, guid: e024785f3ff701548bcc35e97133b316, type: 2}
+    replacement: {fileID: 4059730250630096, guid: 50647f36a4b033c4480d5fb4de4e766b, type: 2}
+  - originalObject: {fileID: 4689687414508000, guid: f23cbb707db4b9341a8fe646fd714b6f, type: 2}
+    replacement: {fileID: 4773830074452635, guid: ad9ef2ce4a7fd2b42ad0d0a2a99441e8, type: 2}
+  - originalObject: {fileID: 4332354183767695, guid: 70649adbfe405884185151053d0178b6, type: 2}
+    replacement: {fileID: 4737612494105728, guid: 0c5440b427d66c94c9159e4e80758df8, type: 2}
+  - originalObject: {fileID: 4165568214360023, guid: 7184dd57ad7fa944f9d6c978b92f0466, type: 2}
+    replacement: {fileID: 4340042632862159, guid: 5af956c6b233e844cac9f682bb940643, type: 2}
+  doubledSpawnChance: 0
+  replaceChance: 1
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1691334142911017}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

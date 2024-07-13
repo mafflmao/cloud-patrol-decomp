@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Explosion_Turret
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path:
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.30502146, y: 0.30502096, z: 0.30502096}
+        inSlope: {x: 1.3992721, y: 1.3992546, z: 1.3992546}
+        outSlope: {x: 1.3992721, y: 1.3992546, z: 1.3992546}
+        tangentMode: 0
+      - time: 0.5
+        value: {x: 1.0046575, y: 1.0046482, z: 1.0046482}
+        inSlope: {x: 1.3992721, y: 1.3992546, z: 1.3992546}
+        outSlope: {x: 1.3992721, y: 1.3992546, z: 1.3992546}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Ring
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0.37543988, y: 0.37543988, z: 0.37543988}
+        inSlope: {x: 2.2465823, y: 2.2465823, z: 2.2465823}
+        outSlope: {x: 2.2465823, y: 2.2465823, z: 2.2465823}
+        tangentMode: 0
+      - time: 0.20000002
+        value: {x: 0.8247564, y: 0.8247564, z: 0.8247564}
+        inSlope: {x: -0.25130296, y: -0.25130296, z: -0.25130296}
+        outSlope: {x: -0.25130296, y: -0.25130296, z: -0.25130296}
+        tangentMode: 0
+      - time: 0.5
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: -2.7491882, y: -2.7491882, z: -2.7491882}
+        outSlope: {x: -2.7491882, y: -2.7491882, z: -2.7491882}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Explode_Mesh
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.4632177, y: 1.4632177, z: 1.4632177}
+        inSlope: {x: 0.7673061, y: 0.7673061, z: 0.7673061}
+        outSlope: {x: 0.7673061, y: 0.7673061, z: 0.7673061}
+        tangentMode: 0
+      - time: 0.5
+        value: {x: 1.8468708, y: 1.8468708, z: 1.8468708}
+        inSlope: {x: 0.18412328, y: 0.18412328, z: 0.18412328}
+        outSlope: {x: 0.18412328, y: 0.18412328, z: 0.18412328}
+        tangentMode: 0
+      - time: 1
+        value: {x: 1.647341, y: 1.647341, z: 1.647341}
+        inSlope: {x: -0.39905953, y: -0.39905953, z: -0.39905953}
+        outSlope: {x: -0.39905953, y: -0.39905953, z: -0.39905953}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Shadow
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.16666667
+        value: 0.5
+        inSlope: -1.5000001
+        outSlope: -1.5000001
+        tangentMode: 0
+      - time: 0.5
+        value: 0
+        inSlope: -1.5000001
+        outSlope: -1.5000001
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: _TintColor.a
+    path: Ring
+    classID: 21
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0.5
+        value: 0.6431373
+        inSlope: -1.2862746
+        outSlope: -1.2862746
+        tangentMode: 0
+      - time: 1
+        value: 0
+        inSlope: -1.2862746
+        outSlope: -1.2862746
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: _Color.a
+    path: Shadow
+    classID: 21
+    script: {fileID: 0}
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_MuscleClipInfo:
+    m_StartTime: 0
+    m_StopTime: 0
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 0
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []
