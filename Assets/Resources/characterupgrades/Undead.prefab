@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1880146313531951
+--- !u!1 &1375634817291873
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4206109869316429}
-  - 114: {fileID: 114891532367723760}
+  - 4: {fileID: 4086321572763844}
+  - 114: {fileID: 114282440685451888}
   m_Layer: 0
   m_Name: Undead
   m_TagString: Untagged
@@ -16,30 +16,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4206109869316429
+--- !u!4 &4086321572763844
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1880146313531951}
+  m_GameObject: {fileID: 1375634817291873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114891532367723760
+--- !u!114 &114282440685451888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1880146313531951}
+  m_GameObject: {fileID: 1375634817291873}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a4f08775654c0fb9dce8655db232ef8, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   onlyRedWizards: 0
-  explosionPrefab: {fileID: 1720197925815112, guid: 05e46837a516137458fa15bca0751666, type: 2}
+  explosionPrefab: {fileID: 1518331408338291, guid: 909f93b3864fb1b429c1283812dbae8a, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -49,6 +49,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1880146313531951}
+  m_RootGameObject: {fileID: 1375634817291873}
   m_IsPrefabParent: 1
   m_IsExploded: 0

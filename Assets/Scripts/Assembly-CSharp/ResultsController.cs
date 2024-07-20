@@ -287,8 +287,6 @@ public class ResultsController : StateController
 	protected override IEnumerator AnimateStateIn()
 	{
 		MusicManager.Instance.PlayGameOverStingerAndMusic();
-		float gameDuration = ProgressionManager.Instance.GameDuration;
-		ProgressionManager.Instance.GameDuration = -1f;
 		skylanderCamera.gameObject.SetActive(true);
 		yield return new WaitForSeconds(0.5f);
 		m_TextName.Text = "____";
@@ -312,21 +310,6 @@ public class ResultsController : StateController
 		totalScoreText.Text = m_CurrentPts.ToString();
 		int ticketCount = 0;
 		m_CanPlayTicketAnim = true;
-		if (OperatorMenu.Instance.m_PointsPerTicket > 0)
-		{
-			ticketCount = Mathf.Max(Mathf.FloorToInt(m_TotalScore / OperatorMenu.Instance.m_PointsPerTicket), 1);
-		}
-		if (OperatorMenu.Instance.m_FixedTicketPayout > 0)
-		{
-			ticketCount = OperatorMenu.Instance.m_FixedTicketPayout;
-		}
-		if (ticketCount < OperatorMenu.Instance.m_MinimumTicketPayout)
-		{
-			ticketCount = OperatorMenu.Instance.m_MinimumTicketPayout;
-		}
-		OperatorMenu.Instance.AddNumberOfTickets((uint)ticketCount);
-		OperatorMenu.Instance.AddTotalGames();
-		OperatorMenu.Instance.AddTotalPoints((uint)m_TotalScore);
 		if (KaboomMgr.Instance != null && OperatorMenu.Instance.m_RedemptionMode && OperatorMenu.Instance.m_CreditsPerGame > 0)
 		{
 			int ticketKaboom2 = ticketCount;
@@ -348,10 +331,6 @@ public class ResultsController : StateController
 		m_CurrentTickets = 0f;
 		ticketText.Text = m_CurrentTickets.ToString();
 		TicketBar.Instance.TicketEarned = ticketCount;
-		if (MetricManager.Instance != null)
-		{
-			MetricManager.Instance.AddMetric(ApplicationManager.METRICNAMES.METRIC_GAMEEND, false, Mathf.RoundToInt(gameDuration), m_TotalScore, GameManager.redBombsHitInVoyage, GameManager.projsHitInVoyage, TicketBar.Instance.TicketEarned, ProgressionManager.Instance.SameUser);
-		}
 		float ticketTime = (float)ticketCount / m_TicketPerSec;
 		m_PtsPerSec = (float)m_TotalScore / ticketTime;
 		iTween.MoveTo(resultScreenPanel, iTween.Hash("position", new Vector3(0f, 0f, 20f), "time", 0.5f, "islocal", true));

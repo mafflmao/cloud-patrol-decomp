@@ -1,19 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1131155191762549
+--- !u!1 &1807717361599297
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4166695951865139}
-  - 15: {fileID: 15308212761300376}
-  - 12: {fileID: 12467302081419090}
-  - 26: {fileID: 26124563933467072}
-  - 111: {fileID: 111804075615499799}
-  - 114: {fileID: 114358550329850767}
-  - 114: {fileID: 114713497527706634}
+  - 4: {fileID: 4894264535287168}
+  - 15: {fileID: 15408382968308877}
+  - 12: {fileID: 12875719775400346}
+  - 26: {fileID: 26694770592812558}
+  - 111: {fileID: 111363618587322601}
+  - 114: {fileID: 114913392093354822}
+  - 114: {fileID: 114059257378261443}
   m_Layer: 0
   m_Name: Ninjini_FXOverlayKillEffect
   m_TagString: Untagged
@@ -21,24 +21,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4166695951865139
+--- !u!4 &4894264535287168
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.3630495, y: -0.49840784, z: -0.93562055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!15 &15308212761300376
+--- !u!15 &15408382968308877
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_Enabled: 1
   m_Emit: 1
   minSize: 0.15
@@ -59,12 +59,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 0.1, y: 0.1, z: 0}
   m_MinEmitterRange: 0
---- !u!12 &12467302081419090
+--- !u!12 &12875719775400346
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -89,20 +89,20 @@ ParticleAnimator:
   damping: 0.1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26124563933467072
+--- !u!26 &26694770592812558
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: a772862de6e07984da8ceb907705b8c7, type: 2}
+  - {fileID: 2100000, guid: 6add504b059a41c4bb009c2d7a23ea60, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -117,17 +117,17 @@ ParticleRenderer:
     x Tile: 1
     y Tile: 1
     cycles: 0
---- !u!111 &111804075615499799
+--- !u!111 &111363618587322601
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: fc0a4037432ea684b822d36683179d7c, type: 2}
+  m_Animation: {fileID: 7400000, guid: 8eb334f45c7fed34aaee8a3f5a4691a9, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: fc0a4037432ea684b822d36683179d7c, type: 2}
+  - {fileID: 7400000, guid: 8eb334f45c7fed34aaee8a3f5a4691a9, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -135,24 +135,24 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
---- !u!114 &114358550329850767
+--- !u!114 &114913392093354822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4932d6a4f6f8b8edefea4c21932d57c2, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   deleteAfter: 3
---- !u!114 &114713497527706634
+--- !u!114 &114059257378261443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1131155191762549}
+  m_GameObject: {fileID: 1807717361599297}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f39dbadfece88c3addbccb278092a2c, type: 3}
@@ -168,6 +168,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1131155191762549}
+  m_RootGameObject: {fileID: 1807717361599297}
   m_IsPrefabParent: 1
   m_IsExploded: 0

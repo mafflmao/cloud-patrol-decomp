@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1814235413488420
+--- !u!1 &1405194636316899
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4200180104906298}
-  - 23: {fileID: 23145737891172588}
-  - 33: {fileID: 33528540135313201}
-  - 65: {fileID: 65444730513121237}
-  - 114: {fileID: 114284087077048420}
-  - 111: {fileID: 111157172446837297}
+  - 4: {fileID: 4957827063539572}
+  - 23: {fileID: 23979588890334990}
+  - 33: {fileID: 33703377001594102}
+  - 65: {fileID: 65571064730856723}
+  - 114: {fileID: 114593156690668791}
+  - 111: {fileID: 111782585612261863}
   m_Layer: 0
   m_Name: Gold_Anvil_AnimDrop
   m_TagString: Untagged
@@ -20,77 +20,77 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4200180104906298
+--- !u!4 &4957827063539572
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
+  m_GameObject: {fileID: 1405194636316899}
   m_LocalRotation: {x: -0.49999997, y: 0.5, z: 0.5000001, w: 0.4999999}
   m_LocalPosition: {x: 0.15979955, y: 2.2597942, z: 4}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!23 &23145737891172588
+--- !u!23 &23979588890334990
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
+  m_GameObject: {fileID: 1405194636316899}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: de88291881ca11f459db7b10cd278576, type: 2}
+  - {fileID: 2100000, guid: 864638129b0307449a085901a54a61ca, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!33 &33528540135313201
+--- !u!33 &33703377001594102
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
-  m_Mesh: {fileID: 4300000, guid: bc002b924e92ae84cb001bf5e93e6026, type: 2}
---- !u!65 &65444730513121237
+  m_GameObject: {fileID: 1405194636316899}
+  m_Mesh: {fileID: 4300000, guid: c6895197848e6704999122136d40fe5f, type: 2}
+--- !u!65 &65571064730856723
 BoxCollider:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
+  m_GameObject: {fileID: 1405194636316899}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Size: {x: 0.5, y: 0.25, z: 0.12774135}
   m_Center: {x: 0, y: -1.1175871E-08, z: 0.06251746}
---- !u!114 &114284087077048420
+--- !u!114 &114593156690668791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
+  m_GameObject: {fileID: 1405194636316899}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb40518db7b285083a138570a2daf86, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  anvilCollisionSound: {fileID: 11400000, guid: b808da984fdad524db9890827dee5b0a, type: 2}
---- !u!111 &111157172446837297
+  anvilCollisionSound: {fileID: 11400000, guid: 31c01d3bf3ef1de48a2a8e230cd31790, type: 2}
+--- !u!111 &111782585612261863
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1814235413488420}
+  m_GameObject: {fileID: 1405194636316899}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 346758770036ca44faff72cf1eff271c, type: 2}
+  m_Animation: {fileID: 7400000, guid: d53cf8d26576bdd4b95068d0195eac98, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 346758770036ca44faff72cf1eff271c, type: 2}
+  - {fileID: 7400000, guid: d53cf8d26576bdd4b95068d0195eac98, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -107,6 +107,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1814235413488420}
+  m_RootGameObject: {fileID: 1405194636316899}
   m_IsPrefabParent: 1
   m_IsExploded: 0

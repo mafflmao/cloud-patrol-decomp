@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1099849911016232
+--- !u!1 &1969631760408628
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4442039133405047}
-  - 198: {fileID: 198036019077422865}
-  - 199: {fileID: 199643983937535871}
+  - 4: {fileID: 4074819766994527}
+  - 198: {fileID: 198070891400099411}
+  - 199: {fileID: 199713185948699694}
   m_Layer: 0
   m_Name: Crusher_FXOverlayTracer
   m_TagString: Untagged
@@ -17,16 +17,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1382866621288682
+--- !u!1 &1295548179143580
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4328750795570236}
-  - 198: {fileID: 198866120715621195}
-  - 199: {fileID: 199529637855893547}
+  - 4: {fileID: 4802845801525119}
+  - 198: {fileID: 198163189496484274}
+  - 199: {fileID: 199072706159864248}
   m_Layer: 0
   m_Name: FallingDebrus
   m_TagString: Untagged
@@ -34,24 +34,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4442039133405047
+--- !u!4 &4074819766994527
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099849911016232}
+  m_GameObject: {fileID: 1969631760408628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.35096115, y: -0.44045842, z: 0.27179372}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4328750795570236}
+  - {fileID: 4802845801525119}
   m_Father: {fileID: 0}
---- !u!198 &198036019077422865
+--- !u!198 &198070891400099411
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099849911016232}
+  m_GameObject: {fileID: 1969631760408628}
   lengthInSec: 0.1
   startDelay: 0
   speed: 1
@@ -1088,19 +1088,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199643983937535871
+--- !u!199 &199713185948699694
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1099849911016232}
+  m_GameObject: {fileID: 1969631760408628}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 0ba31356672d29c4b94beae2bd7fb486, type: 2}
+  - {fileID: 2100000, guid: 2427cac3cd93ad94eabec0a2e0891357, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1118,23 +1118,23 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
---- !u!4 &4328750795570236
+--- !u!4 &4802845801525119
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1382866621288682}
+  m_GameObject: {fileID: 1295548179143580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4442039133405047}
---- !u!198 &198866120715621195
+  m_Father: {fileID: 4074819766994527}
+--- !u!198 &198163189496484274
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1382866621288682}
+  m_GameObject: {fileID: 1295548179143580}
   lengthInSec: 0.1
   startDelay: 0
   speed: 1
@@ -2131,19 +2131,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199529637855893547
+--- !u!199 &199072706159864248
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1382866621288682}
+  m_GameObject: {fileID: 1295548179143580}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 05405e15fa5ef58469623c3f55f4864f, type: 2}
+  - {fileID: 2100000, guid: 06b809d3f3f52734f87c02ef1ec33f21, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2170,6 +2170,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1099849911016232}
+  m_RootGameObject: {fileID: 1969631760408628}
   m_IsPrefabParent: 1
   m_IsExploded: 0

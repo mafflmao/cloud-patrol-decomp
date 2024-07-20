@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1203307204101961
+--- !u!1 &1826392270286847
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4654554230366654}
-  - 114: {fileID: 114963840464480996}
+  - 4: {fileID: 4312851957095402}
+  - 114: {fileID: 114423442622007587}
   m_Layer: 0
   m_Name: Legendary Trigger Happy
   m_TagString: Untagged
@@ -16,31 +16,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4654554230366654
+--- !u!4 &4312851957095402
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1203307204101961}
+  m_GameObject: {fileID: 1826392270286847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114963840464480996
+--- !u!114 &114423442622007587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1203307204101961}
+  m_GameObject: {fileID: 1826392270286847}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 61dd456a4733d8c82a74c805e053056d, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  powerup: {fileID: 11400000, guid: db11b79b399c37748ada922c3208ac6d, type: 2}
+  powerup: {fileID: 11400000, guid: c5125c75a3f0ffd4ca7d35492526850b, type: 2}
   evenMoreAffinity: 0
-  goldAnvilRainPrefab: {fileID: 114110785184205246, guid: 928db25534dcf0246ba21d27eab07842, type: 2}
+  goldAnvilRainPrefab: {fileID: 114862915347778760, guid: 0523def15abc2f54b8c18b7842839049, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -50,6 +50,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1203307204101961}
+  m_RootGameObject: {fileID: 1826392270286847}
   m_IsPrefabParent: 1
   m_IsExploded: 0

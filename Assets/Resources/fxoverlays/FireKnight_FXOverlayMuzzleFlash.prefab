@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1981522172352082
+--- !u!1 &1939577188779147
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4947192273661473}
-  - 198: {fileID: 198140229143618206}
-  - 199: {fileID: 199103342911428966}
+  - 4: {fileID: 4954874995731827}
+  - 198: {fileID: 198609932329833009}
+  - 199: {fileID: 199788049092718530}
   m_Layer: 0
   m_Name: FireKnight_FXOverlayMuzzleFlash
   m_TagString: Untagged
@@ -17,23 +17,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4947192273661473
+--- !u!4 &4954874995731827
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981522172352082}
+  m_GameObject: {fileID: 1939577188779147}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.6292068E-07}
   m_LocalPosition: {x: -14.485364, y: -0.34801942, z: 2.0103998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!198 &198140229143618206
+--- !u!198 &198609932329833009
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981522172352082}
+  m_GameObject: {fileID: 1939577188779147}
   lengthInSec: 0.1
   startDelay: 0
   speed: 1
@@ -1025,19 +1025,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199103342911428966
+--- !u!199 &199788049092718530
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1981522172352082}
+  m_GameObject: {fileID: 1939577188779147}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: acab5f8c3d8b522488a8b97ca130e999, type: 2}
+  - {fileID: 2100000, guid: 1283156ab634eec4686b470078059068, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1064,6 +1064,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1981522172352082}
+  m_RootGameObject: {fileID: 1939577188779147}
   m_IsPrefabParent: 1
   m_IsExploded: 0

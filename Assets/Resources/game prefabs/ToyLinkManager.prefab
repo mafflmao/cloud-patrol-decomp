@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1605336701195388
+--- !u!1 &1638048171781628
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4881869331208721}
-  - 114: {fileID: 114391383364809429}
+  - 4: {fileID: 4051475780631697}
+  - 114: {fileID: 114415640685672011}
   m_Layer: 0
   m_Name: ToyLinkManager
   m_TagString: Untagged
@@ -16,29 +16,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4881869331208721
+--- !u!4 &4051475780631697
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605336701195388}
+  m_GameObject: {fileID: 1638048171781628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -537.36096, y: -281.24472, z: -285.54688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114391383364809429
+--- !u!114 &114415640685672011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605336701195388}
+  m_GameObject: {fileID: 1638048171781628}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f99d60b289b2ee8d825324af397a3c2, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  linkFailedDialogPrefab: {fileID: 114036549676006932, guid: 3d0e2425824bcf343be90157260de109, type: 2}
+  linkFailedDialogPrefab: {fileID: 114316321049333788, guid: 3849da7ee5db648419cfdeea07e34f88, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -48,6 +48,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1605336701195388}
+  m_RootGameObject: {fileID: 1638048171781628}
   m_IsPrefabParent: 1
   m_IsExploded: 0

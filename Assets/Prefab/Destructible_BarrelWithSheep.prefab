@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1067645506628882
+--- !u!1 &1967848993705798
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4786362570102122}
-  - 33: {fileID: 33175877037986003}
-  - 23: {fileID: 23357695341838288}
-  - 114: {fileID: 114778415236786208}
-  - 136: {fileID: 136598353317931273}
-  - 114: {fileID: 114224962087544058}
+  - 4: {fileID: 4020500578221495}
+  - 33: {fileID: 33372989987223146}
+  - 23: {fileID: 23957453279154025}
+  - 114: {fileID: 114973247077753874}
+  - 136: {fileID: 136799358115766543}
+  - 114: {fileID: 114462706944763144}
   m_Layer: 8
   m_Name: Destructible_BarrelWithSheep
   m_TagString: Untagged
@@ -20,48 +20,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4786362570102122
+--- !u!4 &4020500578221495
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
+  m_GameObject: {fileID: 1967848993705798}
   m_LocalRotation: {x: 0, y: 0.9396924, z: 0, w: -0.3420208}
   m_LocalPosition: {x: 0.7328054, y: 1.1196227, z: -2.7080083}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!33 &33175877037986003
+--- !u!33 &33372989987223146
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
-  m_Mesh: {fileID: 4300000, guid: 909f04d5b7a0fa548a45d4ce85f163ab, type: 2}
---- !u!23 &23357695341838288
+  m_GameObject: {fileID: 1967848993705798}
+  m_Mesh: {fileID: 4300000, guid: 414b96bae8f343b49b979984debd334e, type: 2}
+--- !u!23 &23957453279154025
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
+  m_GameObject: {fileID: 1967848993705798}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 685bd792a5e632546a5e059086ea3bdb, type: 2}
+  - {fileID: 2100000, guid: d0c3b42b1f6a6474289897631b2529bb, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!114 &114778415236786208
+--- !u!114 &114973247077753874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
+  m_GameObject: {fileID: 1967848993705798}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e4a0c897508b2a5f6975d27d086bd3f, type: 3}
@@ -70,16 +70,16 @@ MonoBehaviour:
   hitPoints: 10
   noKill: 0
   takeHitEffect: {fileID: 0}
-  killEffect: {fileID: 4617231946136780, guid: c1dc604085efa59429352da8d7614556, type: 2}
+  killEffect: {fileID: 4406358254102281, guid: e0a75624dc35be4449105a9d956ace4f, type: 2}
   poofEffect: {fileID: 0}
-  dropSpawn: {fileID: 4771178521830663, guid: e24376143f851394696a2efcfef1707e, type: 2}
+  dropSpawn: {fileID: 4944364879361874, guid: fff5c836d4f11394da485874e8cd1470, type: 2}
   scoreType: 30
   coinsSpawnedOnHit: 0
   destroyTimeAfterHit: 2.5
-  deathSFXSoundEventData: {fileID: 11400000, guid: 4a279b4f15a8da64ba930705b0efd8a1, type: 2}
+  deathSFXSoundEventData: {fileID: 11400000, guid: 2fabe01817d02b343bf722fa03fbea4b, type: 2}
   lastEnemyDeathSFXSoundEventData: {fileID: 0}
   takeHitSoundEventData: {fileID: 0}
-  takeHitVOSoundEventData: {fileID: 11400000, guid: c4b90da09e8e0f74db5bccdbbff3cbd9, type: 2}
+  takeHitVOSoundEventData: {fileID: 11400000, guid: 535c60dd2ffd5b64085718f4bafe1000, type: 2}
   deflectSFX: {fileID: 0}
   isDeflecting: 0
   isForceFielded: 0
@@ -87,12 +87,12 @@ MonoBehaviour:
   isEnemy: 0
   trajectory: {x: 0, y: 75, z: -100}
   hitWithComboNumber: 0
---- !u!136 &136598353317931273
+--- !u!136 &136799358115766543
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
+  m_GameObject: {fileID: 1967848993705798}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -100,12 +100,12 @@ CapsuleCollider:
   m_Height: 0.4
   m_Direction: 1
   m_Center: {x: 0, y: 0.2, z: 0}
---- !u!114 &114224962087544058
+--- !u!114 &114462706944763144
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067645506628882}
+  m_GameObject: {fileID: 1967848993705798}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23d553dd2124e170fa7dac1ba350db79, type: 3}
@@ -121,6 +121,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1067645506628882}
+  m_RootGameObject: {fileID: 1967848993705798}
   m_IsPrefabParent: 1
   m_IsExploded: 0

@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1633168765638145
+--- !u!1 &1791166003435785
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4907397267931141}
-  - 114: {fileID: 114117562165881395}
+  - 4: {fileID: 4380103499670373}
+  - 114: {fileID: 114640697752791677}
   m_Layer: 0
   m_Name: Air
   m_TagString: Untagged
@@ -16,30 +16,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4907397267931141
+--- !u!4 &4380103499670373
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633168765638145}
+  m_GameObject: {fileID: 1791166003435785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114117562165881395
+--- !u!114 &114640697752791677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1633168765638145}
+  m_GameObject: {fileID: 1791166003435785}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f646eb33d8d66e686febcc79572e307, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   projectileSpeedMultiplier: 0.33
-  windPrefab: {fileID: 1532520751868363, guid: 7aa40fa9dcc6355499c15ee10a933e89, type: 2}
+  windPrefab: {fileID: 1400453119885561, guid: 5011e74c025b91d42b0262f1e5350f85, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -49,6 +49,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1633168765638145}
+  m_RootGameObject: {fileID: 1791166003435785}
   m_IsPrefabParent: 1
   m_IsExploded: 0

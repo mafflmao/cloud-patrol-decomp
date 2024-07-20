@@ -105,7 +105,8 @@ namespace UnityEngine.EventSystems
                     if (result.sortingGroupID != SortingGroup.invalidSortingGroupID &&
                         SortingGroup.GetSortingGroupByIndex(r2d.sortingGroupID) is SortingGroup sortingGroup)
                     {
-                        result.distance = Vector3.Distance(sortingGroup.transform.position, ray.origin);
+                        // Calculate how far along the ray the sorting group is.
+                        result.distance = Vector3.Dot(ray.direction, sortingGroup.transform.position - ray.origin);
                         result.sortingLayer = sortingGroup.sortingLayerID;
                         result.sortingOrder = sortingGroup.sortingOrder;
                     }

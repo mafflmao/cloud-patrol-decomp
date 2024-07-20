@@ -275,25 +275,11 @@ public class TitleController : StateController
 		}
 	}
 
-	public void OnGUI()
-	{
-		if (!m_StartBtnClicked)
-		{
-			ApplicationManager.Instance.DrawInsertCoins(false, MoviePlayer.Instance != null && MoviePlayer.Instance.m_movie != null && MoviePlayer.Instance.m_movie.MovieInstance != null && MoviePlayer.Instance.m_movie.MovieInstance.PositionSeconds >= 186f && ProgressionManager.Instance.m_CoinsInserted <= 0);
-		}
-	}
-
-	private void OnStartBtnClick()
+	public void OnStartBtnClick()
 	{
 		if (!m_StartBtnClicked)
 		{
 			MusicManager.Instance.PlayTitleMusic();
-			if (ProgressionManager.Instance.NoGameDuration > 20f)
-			{
-				ProgressionManager.Instance.SameUser = false;
-			}
-			ProgressionManager.Instance.NoGameDuration = -1f;
-			ProgressionManager.Instance.GameDuration = 0f;
 			m_StartBtnClicked = true;
 			UIManager.instance.blockInput = true;
 			SoundEventManager.Instance.Play2D(PlayClickedSound);
@@ -301,8 +287,6 @@ public class TitleController : StateController
 			{
 				StateManager.Instance.LoadAndActivateState("ElementSelect");
 			};
-			OperatorMenu.Instance.m_InGame = true;
-			OperatorMenu.Instance.ChangeAudioVolume();
 			action();
 		}
 	}

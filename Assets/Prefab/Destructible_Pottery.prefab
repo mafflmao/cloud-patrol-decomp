@@ -1,18 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1058159093439977
+--- !u!1 &1767909583835159
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4949574093112282}
-  - 33: {fileID: 33882196377476107}
-  - 23: {fileID: 23564719822536685}
-  - 114: {fileID: 114133820436731079}
-  - 136: {fileID: 136924516238817159}
-  - 114: {fileID: 114958943532336647}
+  - 4: {fileID: 4708528156799195}
+  - 33: {fileID: 33434657272064625}
+  - 23: {fileID: 23298657363338199}
+  - 114: {fileID: 114251839748137650}
+  - 136: {fileID: 136662893002127968}
+  - 114: {fileID: 114220595014092226}
   m_Layer: 8
   m_Name: Destructible_Pottery
   m_TagString: Untagged
@@ -20,48 +20,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4949574093112282
+--- !u!4 &4708528156799195
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
+  m_GameObject: {fileID: 1767909583835159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -7.995893E-09}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!33 &33882196377476107
+--- !u!33 &33434657272064625
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
-  m_Mesh: {fileID: 4300000, guid: 01f0bfb3a1e22e444a320a1e9ecb548f, type: 2}
---- !u!23 &23564719822536685
+  m_GameObject: {fileID: 1767909583835159}
+  m_Mesh: {fileID: 4300000, guid: 840560cb8e936e748af7efc6a0566b75, type: 2}
+--- !u!23 &23298657363338199
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
+  m_GameObject: {fileID: 1767909583835159}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 056be7d8ed93e0a4482d221761fab15d, type: 2}
+  - {fileID: 2100000, guid: 30cff705c989c7f42956537dbce76523, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!114 &114133820436731079
+--- !u!114 &114251839748137650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
+  m_GameObject: {fileID: 1767909583835159}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e4a0c897508b2a5f6975d27d086bd3f, type: 3}
@@ -70,13 +70,13 @@ MonoBehaviour:
   hitPoints: 10
   noKill: 0
   takeHitEffect: {fileID: 0}
-  killEffect: {fileID: 4190906623529866, guid: b56f413b6e4da50469fc7b6caac4f324, type: 2}
+  killEffect: {fileID: 4668579617492929, guid: 88d41ef718c3da24cb4338a30099b0fa, type: 2}
   poofEffect: {fileID: 0}
   dropSpawn: {fileID: 0}
   scoreType: 30
   coinsSpawnedOnHit: 0
   destroyTimeAfterHit: 2.5
-  deathSFXSoundEventData: {fileID: 11400000, guid: 5be1edc3232cb784a98a27dcfbd4408f, type: 2}
+  deathSFXSoundEventData: {fileID: 11400000, guid: 826889a82ce790f4d80ea6e4cfa842b6, type: 2}
   lastEnemyDeathSFXSoundEventData: {fileID: 0}
   takeHitSoundEventData: {fileID: 0}
   takeHitVOSoundEventData: {fileID: 0}
@@ -87,12 +87,12 @@ MonoBehaviour:
   isEnemy: 0
   trajectory: {x: 0, y: 75, z: -100}
   hitWithComboNumber: 0
---- !u!136 &136924516238817159
+--- !u!136 &136662893002127968
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
+  m_GameObject: {fileID: 1767909583835159}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -100,12 +100,12 @@ CapsuleCollider:
   m_Height: 0.5789018
   m_Direction: 1
   m_Center: {x: 7.450581E-09, y: 0.2894574, z: -2.2351742E-08}
---- !u!114 &114958943532336647
+--- !u!114 &114220595014092226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1058159093439977}
+  m_GameObject: {fileID: 1767909583835159}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23d553dd2124e170fa7dac1ba350db79, type: 3}
@@ -121,6 +121,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1058159093439977}
+  m_RootGameObject: {fileID: 1767909583835159}
   m_IsPrefabParent: 1
   m_IsExploded: 0

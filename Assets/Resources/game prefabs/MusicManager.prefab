@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1497904821306032
+--- !u!1 &1467739497041345
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4717348241028232}
-  - 114: {fileID: 114299591684095570}
+  - 4: {fileID: 4663160168066709}
+  - 114: {fileID: 114710648120523663}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -16,54 +16,54 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4717348241028232
+--- !u!4 &4663160168066709
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1497904821306032}
+  m_GameObject: {fileID: 1467739497041345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114299591684095570
+--- !u!114 &114710648120523663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1497904821306032}
+  m_GameObject: {fileID: 1467739497041345}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa6310291f27d455dfe64af939628dd, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   music:
-  - {fileID: 11400000, guid: 3b212525986ab44429dcdc69ddfb0b8a, type: 2}
-  - {fileID: 11400000, guid: 1cce83a9a8a8ec144a6aa747683aebb6, type: 2}
-  - {fileID: 11400000, guid: aaeb515d17151644195b6ddc0e3a9da4, type: 2}
-  - {fileID: 11400000, guid: 1cce83a9a8a8ec144a6aa747683aebb6, type: 2}
-  - {fileID: 11400000, guid: aaeb515d17151644195b6ddc0e3a9da4, type: 2}
-  - {fileID: 11400000, guid: 1cce83a9a8a8ec144a6aa747683aebb6, type: 2}
-  - {fileID: 11400000, guid: aaeb515d17151644195b6ddc0e3a9da4, type: 2}
-  - {fileID: 11400000, guid: 1cce83a9a8a8ec144a6aa747683aebb6, type: 2}
-  - {fileID: 11400000, guid: aaeb515d17151644195b6ddc0e3a9da4, type: 2}
-  - {fileID: 11400000, guid: 1cce83a9a8a8ec144a6aa747683aebb6, type: 2}
-  - {fileID: 11400000, guid: aaeb515d17151644195b6ddc0e3a9da4, type: 2}
-  TitleMusic: {fileID: 11400000, guid: 48aa92d6df42ab3469ae69cca0e8badb, type: 2}
-  MenuLoop: {fileID: 11400000, guid: 0cf627ddcc83e2b4bb849294c43142e9, type: 2}
+  - {fileID: 11400000, guid: f6c653c411e721b49996e965125db9a8, type: 2}
+  - {fileID: 11400000, guid: 76bdb44af1f8a1e4fb0cca322c2ae542, type: 2}
+  - {fileID: 11400000, guid: 1c30cf3fde1e4c649ace4a4d870b2f81, type: 2}
+  - {fileID: 11400000, guid: 76bdb44af1f8a1e4fb0cca322c2ae542, type: 2}
+  - {fileID: 11400000, guid: 1c30cf3fde1e4c649ace4a4d870b2f81, type: 2}
+  - {fileID: 11400000, guid: 76bdb44af1f8a1e4fb0cca322c2ae542, type: 2}
+  - {fileID: 11400000, guid: 1c30cf3fde1e4c649ace4a4d870b2f81, type: 2}
+  - {fileID: 11400000, guid: 76bdb44af1f8a1e4fb0cca322c2ae542, type: 2}
+  - {fileID: 11400000, guid: 1c30cf3fde1e4c649ace4a4d870b2f81, type: 2}
+  - {fileID: 11400000, guid: 76bdb44af1f8a1e4fb0cca322c2ae542, type: 2}
+  - {fileID: 11400000, guid: 1c30cf3fde1e4c649ace4a4d870b2f81, type: 2}
+  TitleMusic: {fileID: 11400000, guid: a6028777b7084ae41b3dd65d0e965e1a, type: 2}
+  MenuLoop: {fileID: 11400000, guid: 9ef03a4a4c86854498483cfd8dd07213, type: 2}
   bossMusic:
-  - {fileID: 11400000, guid: e494760a3ba573344be9e4fe9bb4f0aa, type: 2}
-  - {fileID: 11400000, guid: e8b5c676f39efc645893ac8c2c3cedbb, type: 2}
-  - {fileID: 11400000, guid: dea23d415e6daa543916739a9f9afd3f, type: 2}
-  - {fileID: 11400000, guid: e8b5c676f39efc645893ac8c2c3cedbb, type: 2}
-  GameOverMusic: {fileID: 11400000, guid: 9f5f41136ec7f2643bcbb8a6ceeabbf4, type: 2}
-  idleMusic: {fileID: 11400000, guid: 0cf627ddcc83e2b4bb849294c43142e9, type: 2}
-  bonusMusic: {fileID: 11400000, guid: 72fcaded03bcbcf4fb387dfef6bbc052, type: 2}
-  windMusic: {fileID: 11400000, guid: 0cf627ddcc83e2b4bb849294c43142e9, type: 2}
-  introMusic: {fileID: 11400000, guid: cd6ac746df044fa4e98ebde841e87067, type: 2}
+  - {fileID: 11400000, guid: 6a76b28114d758e45922d70af95e20e0, type: 2}
+  - {fileID: 11400000, guid: 50516d16f46c1384db8e9b7519cb801c, type: 2}
+  - {fileID: 11400000, guid: 9d9211813fdf7714c93e361a38383eaf, type: 2}
+  - {fileID: 11400000, guid: 50516d16f46c1384db8e9b7519cb801c, type: 2}
+  GameOverMusic: {fileID: 11400000, guid: 8703aefb08b24b049b5de7c1e4394c06, type: 2}
+  idleMusic: {fileID: 11400000, guid: 9ef03a4a4c86854498483cfd8dd07213, type: 2}
+  bonusMusic: {fileID: 11400000, guid: 36e83b3dc848ce140b14710e0e8ab588, type: 2}
+  windMusic: {fileID: 11400000, guid: 9ef03a4a4c86854498483cfd8dd07213, type: 2}
+  introMusic: {fileID: 11400000, guid: 7006aff9092693642b51d409f13e8704, type: 2}
   GameOverMusicDelay: 4.7
-  GameOverStinger: {fileID: 11400000, guid: 5ba4d8d1ecc2992428ccf3c00da23d6d, type: 2}
+  GameOverStinger: {fileID: 11400000, guid: 6c295c59cee0a6b42b04b4166cad3c77, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -73,6 +73,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1497904821306032}
+  m_RootGameObject: {fileID: 1467739497041345}
   m_IsPrefabParent: 1
   m_IsExploded: 0

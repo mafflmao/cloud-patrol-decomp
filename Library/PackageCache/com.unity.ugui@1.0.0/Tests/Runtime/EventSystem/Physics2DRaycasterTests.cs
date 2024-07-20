@@ -115,4 +115,25 @@ public class Physics2DRaycasterTests
         var results = PerformRaycast();
         AssertRaycastResultsOrder(results, m_BlueSprite, m_GreenSprite, m_RedSprite);
     }
+
+    [Test]
+    public void RaycastAllResultsAreSortedBySortGroupDistanceAlongRay()
+    {
+        // Ensure we use the distance along the raycast to sort the results
+        var sortingGroupRed = new GameObject("Sorting Group Red", typeof(SortingGroup));
+        var sortingGroupBlue = new GameObject("Sorting Group Blue", typeof(SortingGroup));
+        var sortingGroupGreen = new GameObject("Sorting Group Green", typeof(SortingGroup));
+        sortingGroupRed.transform.position = new Vector3(0, 0, -1);
+        sortingGroupBlue.transform.position = new Vector3(1000, 1000, 0);
+        sortingGroupGreen.transform.position = new Vector3(0, 0, 1);
+
+        m_RedSprite.transform.SetParent(sortingGroupRed.transform, true);
+        m_BlueSprite.transform.SetParent(sortingGroupBlue.transform, true);
+        m_GreenSprite.transform.SetParent(sortingGroupGreen.transform, true);
+
+        SortingGroup.UpdateAllSortingGroups();
+
+        var results = PerformRaycast();
+        AssertRaycastResultsOrder(results, m_RedSprite, m_BlueSprite, m_GreenSprite);
+    }
 }

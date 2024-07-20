@@ -283,7 +283,7 @@ namespace UnityEditor.Tilemaps
         private void OnGUI()
         {
             // Keep repainting until all previews are loaded
-            if (AssetPreview.IsLoadingAssetPreviews(GetInstanceID()))
+            if (AssetPreview.IsLoadingAssetPreviews())
                 Repaint();
 
             // Release keyboard focus on click to empty space

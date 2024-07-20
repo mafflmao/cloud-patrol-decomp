@@ -14,16 +14,5 @@ public class FingerGesturesInitializer : MonoBehaviour
 
 	private void Awake()
 	{
-		if (!FingerGestures.Instance)
-		{
-			FingerGestures fingerGestures = ((!Application.isEditor) ? desktopGestures : editorGestures);
-			FingerGestures fingerGestures2 = Object.Instantiate(fingerGestures) as FingerGestures;
-			fingerGestures2.name = fingerGestures.name;
-			if (makePersistent)
-			{
-				Object.DontDestroyOnLoad(fingerGestures2.gameObject);
-			}
-		}
-		Object.Destroy(base.gameObject);
 	}
 }

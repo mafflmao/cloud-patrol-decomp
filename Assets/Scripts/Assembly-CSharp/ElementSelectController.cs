@@ -82,8 +82,7 @@ public class ElementSelectController : StateController
 	{
 		if (m_CanClickButton)
 		{
-			ApplicationManager.Instance.m_CountdownObj.Activate(false);
-			m_CanClickButton = false;
+			m_CanClickButton = true;
 			switch (int.Parse(_id))
 			{
 			}
@@ -102,35 +101,35 @@ public class ElementSelectController : StateController
 		{
 		case 0:
 			SkylanderSelect7Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.AIR;
-			m_StateToLoad = "SkylanderSelect7";
+			m_StateToLoad = "SkylanderSelectAir";
 			break;
 		case 1:
 			SkylanderSelect7Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.LIFE;
-			m_StateToLoad = "SkylanderSelect7";
+			m_StateToLoad = "SkylanderSelectLife";
 			break;
 		case 2:
 			SkylanderSelect7Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.FIRE;
-			m_StateToLoad = "SkylanderSelect7";
+			m_StateToLoad = "SkylanderSelectFire";
 			break;
 		case 5:
 			SkylanderSelect7Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.UNDEAD;
-			m_StateToLoad = "SkylanderSelect7";
+			m_StateToLoad = "SkylanderSelectUndead";
 			break;
 		case 6:
 			SkylanderSelect7Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.EARTH;
-			m_StateToLoad = "SkylanderSelect7";
+			m_StateToLoad = "SkylanderSelectEarth";
 			break;
 		case 8:
 			SkylanderSelect8Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.TECH;
-			m_StateToLoad = "SkylanderSelect8";
+			m_StateToLoad = "SkylanderSelectTech";
 			break;
 		case 3:
 			SkylanderSelect8Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.WATER;
-			m_StateToLoad = "SkylanderSelect8";
+			m_StateToLoad = "SkylanderSelectWater";
 			break;
 		case 7:
 			SkylanderSelect9Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.MAGIC;
-			m_StateToLoad = "SkylanderSelect9";
+			m_StateToLoad = "SkylanderSelectMagic";
 			break;
 		default:
 			SkylanderSelect9Controller.m_CurrentElement = SkylanderSelect7Controller.ELEMENTS.SWAP_FORCE;

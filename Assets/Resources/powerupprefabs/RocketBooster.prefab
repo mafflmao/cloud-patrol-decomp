@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1870572860556543
+--- !u!1 &1541662526712351
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4487761757956503}
-  - 114: {fileID: 114801602915982022}
+  - 4: {fileID: 4535986155140075}
+  - 114: {fileID: 114155660700678637}
   m_Layer: 15
   m_Name: RocketBooster
   m_TagString: Untagged
@@ -16,23 +16,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4487761757956503
+--- !u!4 &4535986155140075
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1870572860556543}
+  m_GameObject: {fileID: 1541662526712351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114801602915982022
+--- !u!114 &114155660700678637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1870572860556543}
+  m_GameObject: {fileID: 1541662526712351}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d9ee4335600fdb3dba8d32405e33692, type: 3}
@@ -40,11 +40,11 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   lifeTimeInSeconds: 0
   manuallyUpdatesProgress: 0
-  rocketOnShipPrefab: {fileID: 1807742448055591, guid: 062d233797c8d2b448ae27ac1e283549, type: 2}
-  sfxRocketRise: {fileID: 11400000, guid: d857c1c5192250846886dc6026453ce9, type: 2}
-  sfxRocketStart: {fileID: 11400000, guid: 367415e5bdf3e0e43aa5e3c008ce2fe2, type: 2}
-  sfxRocketLoop: {fileID: 11400000, guid: 9b84f0e3c57c8a84dbcfbb43aa8c4887, type: 2}
-  sfxRocketEnd: {fileID: 11400000, guid: b64143c8dd361d64184eeddae800ee59, type: 2}
+  rocketOnShipPrefab: {fileID: 1164806705251066, guid: 4494e87c38db4af419ac2ea518b0b2ce, type: 2}
+  sfxRocketRise: {fileID: 11400000, guid: 753f2ea00ad71c6418184afa1682df2a, type: 2}
+  sfxRocketStart: {fileID: 11400000, guid: d893f51a194d6ab429a188056d6c9a9d, type: 2}
+  sfxRocketLoop: {fileID: 11400000, guid: cc1e06cbbce1fc845bfff5c88819980f, type: 2}
+  sfxRocketEnd: {fileID: 11400000, guid: 1067abc0909c54141a873987aff83abc, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -54,6 +54,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1870572860556543}
+  m_RootGameObject: {fileID: 1541662526712351}
   m_IsPrefabParent: 1
   m_IsExploded: 0

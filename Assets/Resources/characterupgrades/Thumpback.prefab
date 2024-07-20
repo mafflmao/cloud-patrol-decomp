@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1263520845369944
+--- !u!1 &1311745105495623
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4669714061197976}
-  - 114: {fileID: 114311501318650594}
+  - 4: {fileID: 4885463409491148}
+  - 114: {fileID: 114739036236322812}
   m_Layer: 0
   m_Name: Thumpback
   m_TagString: Untagged
@@ -16,33 +16,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4669714061197976
+--- !u!4 &4885463409491148
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1263520845369944}
+  m_GameObject: {fileID: 1311745105495623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114311501318650594
+--- !u!114 &114739036236322812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1263520845369944}
+  m_GameObject: {fileID: 1311745105495623}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a122799f01f138fa4dd6efc40ccc0cb, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   replacements:
-  - originalObject: {fileID: 4204137117732734, guid: d6235efff5030764181fe44c7e702aeb, type: 2}
-    replacement: {fileID: 4737889813678322, guid: de4e23ab70defda4089aef843bbed955, type: 2}
-  - originalObject: {fileID: 4089024700302438, guid: 2122507be26a7ff45a80932eeb431568, type: 2}
-    replacement: {fileID: 4737889813678322, guid: de4e23ab70defda4089aef843bbed955, type: 2}
+  - originalObject: {fileID: 4429851776030543, guid: 26a9ccb91d51c4c46936618cdfddc83a, type: 2}
+    replacement: {fileID: 4585369844013073, guid: 77ecbd88678965c46a029442198c7f83, type: 2}
+  - originalObject: {fileID: 4099619425451233, guid: b0a01323978764f4a899d9b077931312, type: 2}
+    replacement: {fileID: 4585369844013073, guid: 77ecbd88678965c46a029442198c7f83, type: 2}
   doubledSpawnChance: 0
   replaceChance: 1
 --- !u!1001 &100100000
@@ -54,6 +54,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1263520845369944}
+  m_RootGameObject: {fileID: 1311745105495623}
   m_IsPrefabParent: 1
   m_IsExploded: 0

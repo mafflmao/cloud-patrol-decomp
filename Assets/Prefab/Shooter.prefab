@@ -1,17 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1379861289390950
+--- !u!1 &1175864553735106
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4914228495231683}
-  - 114: {fileID: 114725146767495253}
-  - 114: {fileID: 114789764261833898}
-  - 120: {fileID: 120627865145755216}
-  - 114: {fileID: 114482100893693689}
+  - 4: {fileID: 4394895416784855}
+  - 114: {fileID: 114460739140794156}
+  - 114: {fileID: 114353797333956595}
+  - 120: {fileID: 120298803634718781}
+  - 114: {fileID: 114225742793572647}
   m_Layer: 15
   m_Name: Shooter
   m_TagString: Untagged
@@ -19,23 +19,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4914228495231683
+--- !u!4 &4394895416784855
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379861289390950}
+  m_GameObject: {fileID: 1175864553735106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.20000002, y: 0.2, z: 0.19999999}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114725146767495253
+--- !u!114 &114460739140794156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379861289390950}
+  m_GameObject: {fileID: 1175864553735106}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19a157790d0dc4e072a79b8e074f39bc, type: 3}
@@ -44,46 +44,46 @@ MonoBehaviour:
   damage: 10
   attackDamageType: 0
   targetQueue: {fileID: 0}
-  tracer: {fileID: 1684677584610567, guid: f58c581cb8d854d49bbc638e89980cfb, type: 2}
+  tracer: {fileID: 1650056817711691, guid: 5fd30c1c8929ad545bf3dbc309260230, type: 2}
   muzzleFlash: {fileID: 0}
   rateOfFire: 0.08
   bulletTravelTime: 0.1
   windUpTime: 0
-  comboCoin: {fileID: 1198262246516349, guid: 193e7293337b8c9449f4bd3492768c76, type: 2}
+  comboCoin: {fileID: 1592134081332097, guid: 26677d8efe6e94746ab43a22ac5e24de, type: 2}
   weaponVisual: {fileID: 0}
   comboCount: 0
   isShooting: 0
-  fireSound: {fileID: 11400000, guid: be00e6551fae2ac47a5ca7e5ea40272f, type: 2}
+  fireSound: {fileID: 11400000, guid: 35ff277538fd32644a85c82d744fdead, type: 2}
   fireMaxComboSound: {fileID: 0}
---- !u!114 &114789764261833898
+--- !u!114 &114353797333956595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379861289390950}
+  m_GameObject: {fileID: 1175864553735106}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6745c6be459ef71203b41981b0bf6081, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  Target_SFX_Acquired: {fileID: 11400000, guid: c22ea83869a06eb40835575162dd55ed, type: 2}
-  Target_SFX_Acquired_Combo: {fileID: 11400000, guid: 7f9c040dce6cb9548bd39179914d335f, type: 2}
+  Target_SFX_Acquired: {fileID: 11400000, guid: 81ae549874801e24da68ddd9a1e6e7be, type: 2}
+  Target_SFX_Acquired_Combo: {fileID: 11400000, guid: d1f14f5dbde687840ac5aa9009eed105, type: 2}
   targetPitchShiftAmount: 0.2
-  trackingCrosshair: {fileID: 1961637827696619, guid: 5ebd8fd3dbc768447ae063ab443566e3, type: 2}
+  trackingCrosshair: {fileID: 1873594974711275, guid: 25f5c4d3535e06b4c9373f1e88136bfc, type: 2}
   bombKillDelayTime: 1
---- !u!120 &120627865145755216
+--- !u!120 &120298803634718781
 LineRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379861289390950}
+  m_GameObject: {fileID: 1175864553735106}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: bcba08de03c846443bce7a98d6b3e409, type: 2}
+  - {fileID: 2100000, guid: d3bba9cc739297e4686c38d2cf459f28, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -102,18 +102,18 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!114 &114482100893693689
+--- !u!114 &114225742793572647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1379861289390950}
+  m_GameObject: {fileID: 1175864553735106}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f7879a33daae4df2708803f0fdc430a, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  spotPrefab: {fileID: 1360624317730839, guid: 83b7c4aa18788b446847c39ba79602a7, type: 2}
+  spotPrefab: {fileID: 1981185920947988, guid: 8416f7cb5b4722d4d81d2f638cd59919, type: 2}
   baseMaterial: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
@@ -124,6 +124,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1379861289390950}
+  m_RootGameObject: {fileID: 1175864553735106}
   m_IsPrefabParent: 1
   m_IsExploded: 0

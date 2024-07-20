@@ -11,7 +11,7 @@ public class SkylanderDisplay : MonoBehaviour
 
 	public SpriteText m_NameSkylander;
 
-	private CharacterData m_CD;
+	public CharacterData m_CD;
 
 	public void InitSkylander(string _name, bool _geant, bool _legendary, Texture _pic, CharacterData _cd)
 	{
@@ -30,8 +30,6 @@ public class SkylanderDisplay : MonoBehaviour
 
 	public void OnSkylanderSelect()
 	{
-		UIManager.instance.blockInput = true;
-		ApplicationManager.Instance.m_CountdownObj.Activate(false);
 		StartCoroutine("OnElementBtnClickRte");
 	}
 
@@ -42,14 +40,7 @@ public class SkylanderDisplay : MonoBehaviour
 		yield return new WaitForSeconds(0.5f);
 		SwrveEventsUI.SkylanderTouched(m_CD.charName);
 		StartGameSettings.Instance.activeSkylander = m_CD;
-		if (OperatorMenu.Instance.m_ShowIntroVideo)
-		{
-			MoviePlayer.Instance.PlayMovie(StartGameSettings.Instance.activeSkylander.movieIntro);
-		}
-		else
-		{
-			TransitionController.Instance.StartTransitionFromFrontEnd();
-		}
+		TransitionController.Instance.StartTransitionFromFrontEnd();
 		base.transform.root.gameObject.SetActive(false);
 	}
 }

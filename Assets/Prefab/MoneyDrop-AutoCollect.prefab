@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1815928113301281
+--- !u!1 &1894547205130942
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4350529814839133}
-  - 114: {fileID: 114626922426515457}
-  - 96: {fileID: 96057945525610110}
+  - 4: {fileID: 4354950780297028}
+  - 114: {fileID: 114401822239214697}
+  - 96: {fileID: 96833531049987417}
   m_Layer: 8
   m_Name: MoneyDrop-AutoCollect
   m_TagString: Magnetic
@@ -17,17 +17,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1387113747704431
+--- !u!1 &1338458931517692
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4225502789941349}
-  - 33: {fileID: 33436443631645427}
-  - 23: {fileID: 23356528050802865}
-  - 111: {fileID: 111428430101863706}
+  - 4: {fileID: 4100372931454459}
+  - 33: {fileID: 33907821599110174}
+  - 23: {fileID: 23260556277920196}
+  - 111: {fileID: 111665045326607842}
   m_Layer: 0
   m_Name: collectable_GoldCoin
   m_TagString: Untagged
@@ -35,24 +35,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4350529814839133
+--- !u!4 &4354950780297028
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815928113301281}
+  m_GameObject: {fileID: 1894547205130942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6246252, y: 0.66616917, z: 0.5137688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4225502789941349}
+  - {fileID: 4100372931454459}
   m_Father: {fileID: 0}
---- !u!114 &114626922426515457
+--- !u!114 &114401822239214697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815928113301281}
+  m_GameObject: {fileID: 1894547205130942}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d91bd3ead49a5a5ebb779d8eb32b825f, type: 3}
@@ -61,33 +61,33 @@ MonoBehaviour:
   killEffect: {fileID: 0}
   amIMoney: 1
   amIGem: 0
-  Fuel_SFX_Pickup: {fileID: 11400000, guid: 25b6aa237c9226e4c8b504d83fe2e42c, type: 2}
-  Fuel_SFX_Collect: {fileID: 11400000, guid: dd5eb7767ed71e54cac68bbe10fd1857, type: 2}
+  Fuel_SFX_Pickup: {fileID: 11400000, guid: 5ccfe7233f591f545982814c51eee8d0, type: 2}
+  Fuel_SFX_Collect: {fileID: 11400000, guid: 06b5a11a15df87c47909f7cc919d3bf6, type: 2}
   takeHitTimeDelay: 0.25
   aliveTime: 6
   burstHorzSpeed: 50
   burstUpForce: 80
   autoCollect: 1
   autoCollectTime: 0.2
-  childAnimation: {fileID: 111428430101863706}
+  childAnimation: {fileID: 111665045326607842}
   maxDistance: 2.5
   maxSpeed: 0.1
   numGems: 1
   collectionTravelTime: 0.25
   destinationPoint: {fileID: 0}
---- !u!96 &96057945525610110
+--- !u!96 &96833531049987417
 TrailRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815928113301281}
+  m_GameObject: {fileID: 1894547205130942}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3b51da0559decf8438ee497efb575c3c, type: 2}
+  - {fileID: 2100000, guid: c53e92542aac3b6479892df093555e99, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -114,53 +114,53 @@ TrailRenderer:
       rgba: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!4 &4225502789941349
+--- !u!4 &4100372931454459
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1387113747704431}
+  m_GameObject: {fileID: 1338458931517692}
   m_LocalRotation: {x: 6.7772463E-09, y: -0.012638595, z: 1.2472017E-09, w: 0.9999201}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1215, y: 0.1215, z: 0.1215}
   m_Children: []
-  m_Father: {fileID: 4350529814839133}
---- !u!33 &33436443631645427
+  m_Father: {fileID: 4354950780297028}
+--- !u!33 &33907821599110174
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1387113747704431}
-  m_Mesh: {fileID: 4300000, guid: 8ef90cd1488e1cc428018a77ca6c84ad, type: 2}
---- !u!23 &23356528050802865
+  m_GameObject: {fileID: 1338458931517692}
+  m_Mesh: {fileID: 4300000, guid: ea00af99d26c10b48b57b77738c7cac9, type: 2}
+--- !u!23 &23260556277920196
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1387113747704431}
+  m_GameObject: {fileID: 1338458931517692}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c353dfdb49af8ca4e9337fb47d932e51, type: 2}
+  - {fileID: 2100000, guid: baf82fcdb5996ff458861718193c45a2, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!111 &111428430101863706
+--- !u!111 &111665045326607842
 Animation:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1387113747704431}
+  m_GameObject: {fileID: 1338458931517692}
   m_Enabled: 1
-  m_Animation: {fileID: 7400000, guid: 8b43412f8cb7eaf4c97be02e92992f2e, type: 2}
+  m_Animation: {fileID: 7400000, guid: 6960d9bcf0a861040a8d45b9d5c519ad, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 8b43412f8cb7eaf4c97be02e92992f2e, type: 2}
+  - {fileID: 7400000, guid: 6960d9bcf0a861040a8d45b9d5c519ad, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -177,6 +177,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1815928113301281}
+  m_RootGameObject: {fileID: 1894547205130942}
   m_IsPrefabParent: 1
   m_IsExploded: 0

@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1972790418909103
+--- !u!1 &1221230010587489
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4850346370351458}
-  - 114: {fileID: 114956269878437879}
+  - 4: {fileID: 4579757260362700}
+  - 114: {fileID: 114551148484616133}
   m_Layer: 12
   m_Name: AwardStarsLevelUpScreen
   m_TagString: Untagged
@@ -16,14 +16,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1776905404989176
+--- !u!1 &1736217352603102
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4920001034162463}
+  - 4: {fileID: 4687763774843126}
   m_Layer: 12
   m_Name: TextPanel
   m_TagString: Untagged
@@ -31,17 +31,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1021563014753848
+--- !u!1 &1605216769392484
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4161344850884439}
-  - 23: {fileID: 23454318350487607}
-  - 33: {fileID: 33254476198211884}
-  - 114: {fileID: 114272268093045865}
+  - 4: {fileID: 4567240940358967}
+  - 23: {fileID: 23380893330340279}
+  - 33: {fileID: 33514042651193257}
+  - 114: {fileID: 114213076678550760}
   m_Layer: 12
   m_Name: Gem Text
   m_TagString: Untagged
@@ -49,17 +49,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1557553908233436
+--- !u!1 &1658476356549379
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4879154852587223}
-  - 114: {fileID: 114155199319707049}
-  - 33: {fileID: 33613031677652582}
-  - 23: {fileID: 23665499091824969}
+  - 4: {fileID: 4035909382259645}
+  - 114: {fileID: 114342227519014414}
+  - 33: {fileID: 33661065568222477}
+  - 23: {fileID: 23117145224490549}
   m_Layer: 12
   m_Name: TextBackground
   m_TagString: Untagged
@@ -67,93 +67,93 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4850346370351458
+--- !u!4 &4579757260362700
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1972790418909103}
+  m_GameObject: {fileID: 1221230010587489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4920001034162463}
+  - {fileID: 4687763774843126}
   m_Father: {fileID: 0}
---- !u!114 &114956269878437879
+--- !u!114 &114551148484616133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1972790418909103}
+  m_GameObject: {fileID: 1221230010587489}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bed7bd6e152a986c10eabfc47c4b530a, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  gemCountText: {fileID: 114272268093045865}
-  gemCountTextBackground: {fileID: 114155199319707049}
-  gemCountPanel: {fileID: 1776905404989176}
-  gemPrefab: {fileID: 1008261280005404, guid: 7e6a4068adaf2974e8ec519bb14fa11e, type: 2}
-  levelUpAnimationPrefab: {fileID: 1089917510333923, guid: b4007fa0590ea8548bd1e4adbfdedfc7, type: 2}
-  badgeUpgradeAnimationPrefab: {fileID: 1362855771271155, guid: 9d07e676f6bbec24a96b3bb12c7f4bfa, type: 2}
-  levelUpSFX: {fileID: 11400000, guid: 03447a48fb67c484dbd969d45034c8ab, type: 2}
-  gemSpawnSFX: {fileID: 11400000, guid: e39feb4e1144b704a9caf5177eb319cc, type: 2}
-  uiWipeEchoSFX: {fileID: 11400000, guid: 8c9e7f8268bb2ab45a943f803db7a099, type: 2}
---- !u!4 &4920001034162463
+  gemCountText: {fileID: 114213076678550760}
+  gemCountTextBackground: {fileID: 114342227519014414}
+  gemCountPanel: {fileID: 1736217352603102}
+  gemPrefab: {fileID: 1931206552513296, guid: 020810e4856a531488fdcebc08b9725c, type: 2}
+  levelUpAnimationPrefab: {fileID: 1914955584167248, guid: 0b4f55e139838644dbf46107bbf06143, type: 2}
+  badgeUpgradeAnimationPrefab: {fileID: 1934231434184190, guid: b2e93c1408a1f0a4b8beb664ec3910af, type: 2}
+  levelUpSFX: {fileID: 11400000, guid: 4dac2fe44fa7d3640b2b41be8d76c42c, type: 2}
+  gemSpawnSFX: {fileID: 11400000, guid: 1266a75bf08ab0447bf961dd2e7aff1c, type: 2}
+  uiWipeEchoSFX: {fileID: 11400000, guid: 774fe76dfe3a87c4a860da1950632bfa, type: 2}
+--- !u!4 &4687763774843126
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1776905404989176}
+  m_GameObject: {fileID: 1736217352603102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -477.4845, z: -220}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4161344850884439}
-  - {fileID: 4879154852587223}
-  m_Father: {fileID: 4850346370351458}
---- !u!4 &4161344850884439
+  - {fileID: 4567240940358967}
+  - {fileID: 4035909382259645}
+  m_Father: {fileID: 4579757260362700}
+--- !u!4 &4567240940358967
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021563014753848}
+  m_GameObject: {fileID: 1605216769392484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 7.5393677, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4920001034162463}
---- !u!23 &23454318350487607
+  m_Father: {fileID: 4687763774843126}
+--- !u!23 &23380893330340279
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021563014753848}
+  m_GameObject: {fileID: 1605216769392484}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9f8ca6729b8449844bd6e9420acb3d65, type: 2}
+  - {fileID: 2100000, guid: 7d96d3e10dbbd8b4eb5fb0c9cae21e46, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
---- !u!33 &33254476198211884
+--- !u!33 &33514042651193257
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021563014753848}
+  m_GameObject: {fileID: 1605216769392484}
   m_Mesh: {fileID: 0}
---- !u!114 &114272268093045865
+--- !u!114 &114213076678550760
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021563014753848}
+  m_GameObject: {fileID: 1605216769392484}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc16e32b6e459f851839f4b73ca6e273, type: 3}
@@ -167,7 +167,7 @@ MonoBehaviour:
   anchor: 4
   alignment: 0
   tabSize: 4
-  font: {fileID: 4900000, guid: fbcece66016df8149828e06f1e9417c3, type: 3}
+  font: {fileID: 4900000, guid: aaa94ad0731c5e749bad119d8165e9ba, type: 3}
   color: {r: 1, g: 1, b: 1, a: 1}
   pixelPerfect: 0
   maxWidth: 0
@@ -185,48 +185,48 @@ MonoBehaviour:
   hideAtStart: 0
   persistent: 0
   ignoreClipping: 0
---- !u!4 &4879154852587223
+--- !u!4 &4035909382259645
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1557553908233436}
+  m_GameObject: {fileID: 1658476356549379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4920001034162463}
---- !u!114 &114155199319707049
+  m_Father: {fileID: 4687763774843126}
+--- !u!114 &114342227519014414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1557553908233436}
+  m_GameObject: {fileID: 1658476356549379}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73bee0a59ca7a888b1b4406ca9bafa04, type: 3}
   m_Name:
   m_EditorClassIdentifier:
---- !u!33 &33613031677652582
+--- !u!33 &33661065568222477
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1557553908233436}
+  m_GameObject: {fileID: 1658476356549379}
   m_Mesh: {fileID: 0}
---- !u!23 &23665499091824969
+--- !u!23 &23117145224490549
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1557553908233436}
+  m_GameObject: {fileID: 1658476356549379}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9bc37b5b6e7bd904783ce340439efba2, type: 2}
+  - {fileID: 2100000, guid: 34390b4e078f8374695d348a3c32a231, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -241,6 +241,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1972790418909103}
+  m_RootGameObject: {fileID: 1221230010587489}
   m_IsPrefabParent: 1
   m_IsExploded: 0

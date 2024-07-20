@@ -39,11 +39,6 @@ public class Activator : MonoBehaviour
 				delayedActivationGOs.Add(delayActivationUntilRoomArrival.gameObject);
 			}
 		}
-		if (!activeOnStart)
-		{
-			_log.LogDebug("De-Activating children...");
-			SetChildrenInactive();
-		}
 		BoxCollider component = GetComponent<BoxCollider>();
 		if (component != null && component.size.x < minimumTriggerWidth)
 		{

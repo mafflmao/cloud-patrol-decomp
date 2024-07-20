@@ -243,4 +243,13 @@ public class PortalLinkScreen : MonoBehaviour
 		SwrveEventsProgression.PortalLinkHelpButtonHit(LinkableData.ToyLinkDisplayName, gemsToReimburse, PortalWasConnected, WrongToyWasPlaced);
 		ActivateWatcher.Instance.ShowActivateUI(Bedrock.brUserInterfaceScreen.BR_CUSTOMER_SERVICE_UI);
 	}
+
+	public void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+				StartCoroutine(DelayDismiss());
+				SuccessAction();
+		}
+	}
 }

@@ -92,7 +92,7 @@ public class GameManager : SingletonMonoBehaviour
 
 	private static GameState _gameState = GameState.OutOfGame;
 
-	public static bool debugMode = false;
+	public static bool debugMode = true;
 
 	public Transform endGameScreen;
 
@@ -266,25 +266,7 @@ public class GameManager : SingletonMonoBehaviour
 
 	public void Start()
 	{
-		projsHitInVoyage = 0;
-		redBombsHitInVoyage = 0;
-		bombsHitInVoyage = 0;
-		bombsPtsLostInVoyage = 0;
-		Debug.Log("DFPS: " + DebugSettingsUI.debugFPS);
-		if (DebugSettingsUI.debugFPS == 0)
-		{
-			Application.targetFrameRate = 60;
-		}
-		Resources.UnloadUnusedAssets();
-		foreach (PowerupData powerup in powerupsToPreload.powerups)
-		{
-			powerup.LoadPowerupPrefabFromResources();
-		}
-		OnGameManagerLoaded();
-		goFlash = (FullScreenFX)UnityEngine.Object.FindObjectOfType(typeof(FullScreenFX));
-		sessionStats = new SessionStatistics();
-		SwrveUserData.UploadAllAttributes();
-		Debug.Log("Screen Resolution [ " + Screen.currentResolution.width + ", " + Screen.currentResolution.height + " ]");
+		gameState = GameState.Playing;
 	}
 
 	private void OnEnable()
@@ -651,22 +633,6 @@ public class GameManager : SingletonMonoBehaviour
 
 	private void SetPaused(bool paused, PauseReason reason)
 	{
-		_log.LogDebug("SetPaused ({0}, {1})", paused, reason);
-		if (paused != _isPaused)
-		{
-			if (paused)
-			{
-				_timeScaleBeforePause = Time.timeScale;
-				Time.timeScale = 0f;
-			}
-			else
-			{
-				Time.timeScale = _timeScaleBeforePause;
-				_timeScaleBeforePause = -1f;
-			}
-			_isPaused = paused;
-			OnPauseChanged(reason);
-		}
 	}
 
 	public void OnGameManagerLoaded()

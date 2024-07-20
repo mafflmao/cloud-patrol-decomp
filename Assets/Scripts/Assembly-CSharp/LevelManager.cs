@@ -724,25 +724,6 @@ public class LevelManager : SingletonMonoBehaviour
 			HealthBar.Instance.Die();
 			return string.Empty;
 		}
-		if (OperatorMenu.Instance.m_ShortGameMode && RoomsCleared >= 5)
-		{
-			if (RoomsCleared >= 6)
-			{
-				HealthBar.Instance.Die();
-				return string.Empty;
-			}
-			Room shortVersionHideOut = m_ShortVersionHideOut;
-			return shortVersionHideOut.sceneName;
-		}
-		if (m_CurRoomIndex > 0 && m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData[m_CurRoomIndex - 1].m_ScoreNeededForDiffUp > 0 && GameManager.currentScore > m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData[m_CurRoomIndex - 1].m_ScoreNeededForDiffUp && m_CurDifficultyIndex < m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData.Count - 1)
-		{
-			DiffIncreased = true;
-			int count = m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData.Count;
-			m_CurDifficultyIndex++;
-			m_CurRoomIndex = Mathf.Max(m_CurRoomIndex - (count - m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData.Count), 0);
-			OnDifficultyUp();
-			DifficultyManager.Instance.DifficultyUp();
-		}
 		Room room = m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData[m_CurRoomIndex].m_RoomGroup.DrawNextRandomRoom();
 		m_CurRoomIndex++;
 		return room.sceneName;
@@ -750,27 +731,15 @@ public class LevelManager : SingletonMonoBehaviour
 
 	private string GetBossRoom()
 	{
-		List<RoomGroup> list = new List<RoomGroup>();
-		foreach (RoomGroup item in CurrentLevel.rooms.Where((RoomGroup roomGroup) => roomGroup.difficulty == Difficulty.Boss))
+		DiffIncreased = false;
+		if (m_CurRoomIndex >= m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData.Count)
 		{
-			Room room = item.PeekNextSequentialRoom();
-			if (AlreadyPlayedTutorialsFor(room))
-			{
-				list.Add(item);
-			}
+			HealthBar.Instance.Die();
+			return string.Empty;
 		}
-		if (!list.Any())
-		{
-			foreach (KeyValuePair<EnemyTypes, bool> item2 in _tutorialPlayed)
-			{
-				Debug.Log(string.Concat("Played Tutorial - ", item2.Key, " - ", item2.Value));
-			}
-			Debug.LogError("Unable to find boss room group that matches the played tutorial types - returning first one we find.");
-			return CurrentLevel.rooms.Where((RoomGroup roomGroup) => roomGroup.difficulty == Difficulty.Boss).First().DrawNextSequentialRoom()
-				.sceneName;
-		}
-		int index = UnityEngine.Random.Range(0, list.Count);
-		return list[index].DrawNextSequentialRoom().sceneName;
+		Room room = m_DifficultyRoomGroup[m_CurDifficultyIndex].m_RoomData[m_CurRoomIndex].m_RoomGroup.DrawNextRandomRoom();
+		m_CurRoomIndex++;
+		return room.sceneName;
 	}
 
 	private void OnDifficultyUp()

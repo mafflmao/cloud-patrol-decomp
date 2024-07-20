@@ -1,16 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1511359158370930
+--- !u!1 &1347445261438623
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4310107373111336}
-  - 15: {fileID: 15565332345130853}
-  - 12: {fileID: 12966760553484946}
-  - 26: {fileID: 26387537284127762}
+  - 4: {fileID: 4069475258764193}
+  - 15: {fileID: 15654880840392574}
+  - 12: {fileID: 12530112944840505}
+  - 26: {fileID: 26280857530038918}
   m_Layer: 12
   m_Name: Particle_StarGet_Star
   m_TagString: Untagged
@@ -18,24 +18,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4310107373111336
+--- !u!4 &4069475258764193
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1511359158370930}
+  m_GameObject: {fileID: 1347445261438623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!15 &15565332345130853
+--- !u!15 &15654880840392574
 EllipsoidParticleEmitter:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1511359158370930}
+  m_GameObject: {fileID: 1347445261438623}
   m_Enabled: 1
   m_Emit: 1
   minSize: 100
@@ -56,12 +56,12 @@ EllipsoidParticleEmitter:
   m_OneShot: 1
   m_Ellipsoid: {x: 0, y: 0, z: 0}
   m_MinEmitterRange: 0
---- !u!12 &12966760553484946
+--- !u!12 &12530112944840505
 ParticleAnimator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1511359158370930}
+  m_GameObject: {fileID: 1347445261438623}
   Does Animate Color?: 1
   colorAnimation[0]:
     serializedVersion: 2
@@ -86,20 +86,20 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 1
---- !u!26 &26387537284127762
+--- !u!26 &26280857530038918
 ParticleRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1511359158370930}
+  m_GameObject: {fileID: 1347445261438623}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 16cbd89d6faec9945a3d9718c09765c1, type: 2}
+  - {fileID: 2100000, guid: 952d052f6705164428b399194e4428c4, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -123,6 +123,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1511359158370930}
+  m_RootGameObject: {fileID: 1347445261438623}
   m_IsPrefabParent: 1
   m_IsExploded: 0

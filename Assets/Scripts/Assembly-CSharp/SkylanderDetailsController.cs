@@ -122,11 +122,32 @@ public class SkylanderDetailsController : StateController
 
 	private SaleTag _unlockSaleTag;
 
+	private GameObject currentSkylanderInstance;
+
+	private int currentCharacterIndex = 0;
+
+	private CharacterData[] allReleasedSkylanders;
+
 	private void Start()
 	{
 		_upgradeSaleTag = upgradeSaleTagPlaceholder.InstantiatePrefab().GetComponent<SaleTag>();
 		_unlockSaleTag = unlockSaleTagPlaceholder.InstantiatePrefab().GetComponent<SaleTag>();
 		_originalRequirementTextPosition = upgradeRequirementText.transform.localPosition;
+		    // Initialize all released Skylanders
+    		allReleasedSkylanders = ElementDataManager.Instance.characterDataList.GetAllReleasedSkylanders();
+    
+    		// Ensure SelectedCharacterData is initialized if null
+    		if (SelectedCharacterData == null)
+    		{
+     		   SelectedCharacterData = defaultCharData;
+    		}
+    
+    		// Load the initial skylander
+    		LoadSkylander();
+    		DisplaySkylander();
+    
+    		// Update visuals initially
+    		UpdateVisuals();
 	}
 
 	private void OnEnable()
@@ -214,10 +235,52 @@ public class SkylanderDetailsController : StateController
 
 	private void Update()
 	{
+		CharacterData[] allReleasedSkylanders = ElementDataManager.Instance.characterDataList.GetAllReleasedSkylanders();
+		CharacterData[] array = allReleasedSkylanders;
+		
 		if (riggedSkylander != null && doRotation)
 		{
 			skylanderRoot.transform.Rotate(new Vector3(0f, 0f - lockedRotationRate * Time.deltaTime, 0f));
 		}
+
+		    // Check for arrow key input to cycle through characters
+   		if (Input.GetKeyDown(KeyCode.LeftArrow))
+    		{
+        		CycleCharacter(-1); // Cycle to previous character
+    		}
+    		else if (Input.GetKeyDown(KeyCode.RightArrow))
+    		{
+        		CycleCharacter(1); // Cycle to next character
+    		}
+	}
+
+	private void CycleCharacter(int direction)
+	{
+	    // Calculate the next index based on direction
+	    currentCharacterIndex += direction;
+    
+	    // Wrap around the index if it goes out of bounds
+		if (currentCharacterIndex < 0)
+		{
+	        currentCharacterIndex = allReleasedSkylanders.Length - 1;
+		}
+	    	else if (currentCharacterIndex >= allReleasedSkylanders.Length)
+	    	{
+	        currentCharacterIndex = 0;
+	    	}
+    
+    // Remove or deactivate the current skylander visuals
+    	RemoveSkylander();
+    
+    // Update SelectedCharacterData to the new character
+    	SelectedCharacterData = allReleasedSkylanders[currentCharacterIndex];
+    
+    // Load and display the new skylander
+    	LoadSkylander();
+    	DisplaySkylander();
+    
+    // Update visuals
+    	UpdateVisuals();
 	}
 
 	private bool IsSkylanderFulyLinked(CharacterUserData cud)
@@ -590,6 +653,27 @@ public class SkylanderDetailsController : StateController
 		{
 			TransitionController.Instance.StartTransitionFromFrontEnd();
 		}
+	}
+	
+	private void RemoveSkylander()
+	{
+    	// Implement your logic to remove or deactivate the current skylander visuals
+    	// Example:
+    	        GameObject parentObject = GameObject.Find("RiggedSkylanderParent");
+
+        // Check if the parent object exists
+        if (parentObject != null)
+        {
+            // Destroy all children of the parent object
+            foreach (Transform child in parentObject.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+        else
+        {
+            Debug.LogError("RiggedSkylanderParent not found!");
+        }
 	}
 
 	private void SelectSkylander()

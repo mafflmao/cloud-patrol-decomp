@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1088678010116946
+--- !u!1 &1798802173143149
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4061911845048353}
-  - 198: {fileID: 198740722367256014}
-  - 199: {fileID: 199967846663088384}
+  - 4: {fileID: 4771565311724119}
+  - 198: {fileID: 198501067172000172}
+  - 199: {fileID: 199270853420274718}
   m_Layer: 0
   m_Name: Hothead_FXOverlayMuzzleFlash
   m_TagString: Untagged
@@ -17,23 +17,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4061911845048353
+--- !u!4 &4771565311724119
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1088678010116946}
+  m_GameObject: {fileID: 1798802173143149}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.6292068E-07}
   m_LocalPosition: {x: -14.485364, y: -0.34801942, z: 2.0103998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!198 &198740722367256014
+--- !u!198 &198501067172000172
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1088678010116946}
+  m_GameObject: {fileID: 1798802173143149}
   lengthInSec: 0.1
   startDelay: 0
   speed: 1
@@ -1025,19 +1025,19 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &199967846663088384
+--- !u!199 &199270853420274718
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1088678010116946}
+  m_GameObject: {fileID: 1798802173143149}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: acab5f8c3d8b522488a8b97ca130e999, type: 2}
+  - {fileID: 2100000, guid: 1283156ab634eec4686b470078059068, type: 2}
   m_SubsetIndices: []
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1064,6 +1064,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1088678010116946}
+  m_RootGameObject: {fileID: 1798802173143149}
   m_IsPrefabParent: 1
   m_IsExploded: 0

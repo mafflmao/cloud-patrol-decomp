@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1270383036193321
+--- !u!1 &1845543923463437
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4516585083032728}
-  - 114: {fileID: 114682676092765766}
+  - 4: {fileID: 4659031056164408}
+  - 114: {fileID: 114886243790431739}
   m_Layer: 0
   m_Name: TouchScreen Gestures
   m_TagString: Untagged
@@ -16,30 +16,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4516585083032728
+--- !u!4 &4659031056164408
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1270383036193321}
+  m_GameObject: {fileID: 1845543923463437}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.19890666, y: 1.175439, z: -0.31684732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114682676092765766
+--- !u!114 &114886243790431739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1270383036193321}
+  m_GameObject: {fileID: 1845543923463437}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebbedfb1ae22dcabd30187b2bd6a76dc, type: 3}
   m_Name:
   m_EditorClassIdentifier:
   longPressDuration: 1.5
-  defaultPrefabs: {fileID: 114601784088866675, guid: 3d742a9d8b7102d44983c8101c6f4956, type: 2}
+  defaultPrefabs: {fileID: 114744452048251791, guid: a58971f5b7a9eb440bcbc3120ee75692, type: 2}
   defaultCompFlags:
     perFinger:
       enabled: 1
@@ -73,6 +73,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1270383036193321}
+  m_RootGameObject: {fileID: 1845543923463437}
   m_IsPrefabParent: 1
   m_IsExploded: 0

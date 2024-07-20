@@ -1,14 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1492537494523983
+--- !u!1 &1248963454995187
 GameObject:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_Component:
-  - 4: {fileID: 4352375683196240}
-  - 114: {fileID: 114982086363405936}
+  - 4: {fileID: 4968006845198738}
+  - 114: {fileID: 114712870466419896}
   m_Layer: 0
   m_Name: HealingElixirUnlockedRequirement
   m_TagString: Untagged
@@ -16,29 +16,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4352375683196240
+--- !u!4 &4968006845198738
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492537494523983}
+  m_GameObject: {fileID: 1248963454995187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &114982086363405936
+--- !u!114 &114712870466419896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1492537494523983}
+  m_GameObject: {fileID: 1248963454995187}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82e85b98e05cbad1bb23a06123fb92e4, type: 3}
   m_Name:
   m_EditorClassIdentifier:
-  magicItem: {fileID: 11400000, guid: c940c51a058403041b80cc6ee8c9ddea, type: 2}
+  magicItem: {fileID: 11400000, guid: 016babd3ebf8a6c4795a4083f47da70f, type: 2}
 --- !u!1001 &100100000
 Prefab:
   serializedVersion: 2
@@ -48,6 +48,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1492537494523983}
+  m_RootGameObject: {fileID: 1248963454995187}
   m_IsPrefabParent: 1
   m_IsExploded: 0
