@@ -40,9 +40,6 @@ public class ElementSelectController : StateController
 
 	private void Awake()
 	{
-		GameObjectUtils.SetLayerRecursive(ApplicationManager.Instance.m_CountdownObj.gameObject, LayerMask.NameToLayer("UI"));
-		ApplicationManager.Instance.m_CountdownObj.Activate(true);
-		Countdown.CountdownFinished += OnCountdownFinished;
 	}
 
 	private void OnDestroy()

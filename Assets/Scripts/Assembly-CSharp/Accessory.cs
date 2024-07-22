@@ -12,7 +12,7 @@ public class Accessory : SafeMonoBehaviour
 
 	public float PercentChanceToSpawn = 1f;
 
-	public GameObject poofPrefab
+	public GameObject poofPrefab;
 
 	public bool useRotate;
 

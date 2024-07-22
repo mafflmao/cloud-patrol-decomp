@@ -8,6 +8,6 @@ public class SplashScreenController : MonoBehaviour
 		Application.targetFrameRate = 60;
 		yield return new WaitForEndOfFrame();
 		yield return new WaitForEndOfFrame();
-		Application.LoadLevel("Title");
+		Application.LoadLevel("ElementSelect");
 	}
 }

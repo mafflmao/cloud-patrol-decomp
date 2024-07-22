@@ -196,24 +196,6 @@ public class TitleController : StateController
 
 	private void Update()
 	{
-		if (OperatorMenu.Instance.m_CreditsPerGame <= 0 && FingerGestures.InputFinger.IsDown)
-		{
-			MoviePlayer.Instance.EndMovie(true);
-			leaderBoardObj.SetActive(false);
-			ActivateTitleObj(false);
-			ProgressionManager.Instance.m_CoinsInserted -= OperatorMenu.Instance.m_CreditsPerGame;
-			OnStartBtnClick();
-			blackScreenObj.SetActive(false);
-			skyObj.SetActive(true);
-		}
-		if (m_CanPlayMovie && !m_StartBtnClicked)
-		{
-			m_PlayMovieTime -= Time.deltaTime;
-			if (m_PlayMovieTime <= 0f)
-			{
-				CheckStartVideo();
-			}
-		}
 	}
 
 	private void CheckStartVideo()
@@ -275,7 +257,7 @@ public class TitleController : StateController
 		}
 	}
 
-	public void OnStartBtnClick()
+	private void OnStartBtnClick()
 	{
 		if (!m_StartBtnClicked)
 		{

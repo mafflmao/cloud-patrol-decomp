@@ -51,10 +51,6 @@ public class ApplicationManager : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			Application.Quit();
-		}
 	}
 
 	public void DrawInsertCoins(bool i_PlayAgain = false, bool i_SkylanderPubMessage = false)

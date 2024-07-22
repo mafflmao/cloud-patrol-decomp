@@ -503,6 +503,11 @@ public class GameManager : SingletonMonoBehaviour
 			_log.LogDebug("Setting minimum time scale.");
 			Time.timeScale = 0.1f;
 		}
+		if (gameState == GameState.Dead)
+		{
+			Application.LoadLevel("ElementSelect");
+			_gameState = GameState.OutOfGame;
+		}
 	}
 
 	public static void HurtPlayer(float amount)
